@@ -1,0 +1,21 @@
+# Data files
+data_source/*
+example_data/*
+!data/.gitkeep
+*.csv
+*.parquet
+*.duckdb
+*.duckdb.wal
+*.db
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
