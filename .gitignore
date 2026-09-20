@@ -1,7 +1,6 @@
 # Data files
 data_source/*
 example_data/*
-!data/.gitkeep
 *.csv
 *.parquet
 *.duckdb
