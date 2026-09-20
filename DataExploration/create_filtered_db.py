@@ -76,6 +76,7 @@ con.execute("""
             UNNEST(map_entries(CAST(genres AS MAP(VARCHAR, INTEGER)))) AS entry
         FROM genres_raw
     )
+    WHERE entry.value > 0
 """)
 
 # --- Step 7: join genres onto filtered books (LEFT JOIN so no rows are dropped) ---
